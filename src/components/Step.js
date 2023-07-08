@@ -3,7 +3,7 @@ import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
 import Welcome from './Welcome';
-
+import EndScreen from './EndScreen'
 export const FormDataContext = createContext(null);
 
 export default function Step() {
@@ -21,6 +21,8 @@ export default function Step() {
                 return <Step2 setStep={setStep} />;
             case 3:
                 return <Step3 setStep={setStep} />;
+            case 4:
+                return <EndScreen />;
             default:
                 return null;
         }

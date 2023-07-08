@@ -17,7 +17,7 @@ export default function Question({ fieldType, title, setStep, step, }) {
 
     const handleChange = (e) => {
         setFormData({
-            formData,
+            ...formData,
             // [fieldType]: e.target.value
             [fieldType]: e.target.value
         })
