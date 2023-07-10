@@ -1,7 +1,12 @@
 .App {
   text-align: center;
-  height: 80vh;
   display: flex;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
 }
 
 .App-logo {
@@ -38,111 +43,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.section-wrapper {
-  width: 100%;
-  overflow-y: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 1 0%;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.section {
-  width: 100%;
-
-  .title {
-    font-weight: unset;
-    font-size: 30px;
-    line-height: 38px;
-    color: rgb(0, 0, 0);
-    box-sizing: inherit;
-    -webkit-font-smoothing: antialiased;
-  }
-
-}
-
-.start-btn {
-  margin-top: 40px;
-}
-
-.input-field {
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: rgb(1, 66, 172);
-  padding: 0px 0px 8px;
-  border: none;
-  outline: none;
-  border-radius: 0px;
-  appearance: none;
-  background-image: none;
-  background-position: initial;
-  background-size: initial;
-  background-repeat: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  transform: translateZ(0px);
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
-  line-height: unset;
-  /* -webkit-text-fill-color: rgb(1, 66, 172); */
-  animation: 1ms ease 0s 1 normal none running native-autofill-in;
-  transition: background-color 1e+08s ease 0s, box-shadow 0.1s ease-out 0s;
-  box-shadow: rgba(1, 66, 172, 0.3) 0px 1px;
-  background-color: transparent !important;
-}
-
-.input-field:focus {
-  border: 0;
-  outline: none;
-  color: rgb(1, 66, 172);
-  box-shadow: rgb(1, 66, 172) 0px 2px;
-  /* border- */
-  /* -webkit-text-fill-color: rgb(1, 66, 172); */
-
-}
-
-.ok-btn {
-
-  /* line-height: initial; */
-  margin-top: 24px !important;
-  font-weight: 700;
-  cursor: pointer;
-  transition-duration: 0.1s;
-  transition-property: background-color, color, border-color, opacity, box-shadow;
-  transition-timing-function: ease-out;
-  outline: none;
-  border: 1px solid transparent;
-  margin: 0px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
-  padding: 6px 14px;
-  min-height: 40px;
-  background-color: rgb(1, 66, 172);
-  color: rgb(255, 255, 255);
-  border-radius: 4px;
-}
-
-.ok-btn span {
-  font-family: 'League-Spartan';
-}
-
-button[disabled=disabled],
-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.end-desc {
-  width: inherit;
-  font-weight: unset;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.7);
-  overflow-wrap: break-word;
-
 }

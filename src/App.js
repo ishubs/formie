@@ -1,13 +1,29 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Calculator from './components/Calculator';
+import Step from './components/Forms/Step';
 import './App.css';
-import Step from './components/Step';
 
 function App() {
   return (
-    <div className="App">
-      <Step />
+    <div className='App'>'
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Step />} />
+          <Route path="/calculator" element={<Calculator />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+
+// terms and conditions 
+// https://merchant.razorpay.com/policy/MCC5D3iUj6bcpn/privacy
+// privacy policy
+// https://merchant.razorpay.com/policy/MCC5D3iUj6bcpn/terms
+//https://merchant.razorpay.com/policy/MCC5D3iUj6bcpn/privacy
+
+//contact us
+//https://merchant.razorpay.com/policy/MCC5D3iUj6bcpn/contact_us
