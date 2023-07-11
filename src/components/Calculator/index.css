@@ -10,5 +10,22 @@
 }
 
 h1 {
-    line-height: 35pxs;
+    line-height: 35px;
+    position: absolute;
+    top: 40px;
+}
+
+
+.result {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title {
+    font-size: 32px;
+
+
 }
