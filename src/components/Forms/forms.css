@@ -124,3 +124,8 @@ button:disabled {
     flex-direction: column;
     gap: 20px;
 }
+
+.menuBar {
+    position: absolute;
+    top: 0;
+}

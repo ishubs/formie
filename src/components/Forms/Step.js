@@ -11,13 +11,13 @@ export const FormDataContext = createContext(null);
 
 export default function Step() {
 
-    const [step, setStep] = useState(0);
+    const [step, setStep] = useState(1);
     const [formData, setFormData] = useState({ name: '', email: '', tel: '' })
 
     const Currentstep = (step) => {
         switch (step) {
-            case 0:
-                return <Welcome setStep={setStep} />;
+            // case 0:
+            // return <Welcome setStep={setStep} />;
             case 1:
                 return <Step1 setStep={setStep} />;
             case 2:

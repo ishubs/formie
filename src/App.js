@@ -1,14 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Step from './components/Forms/Step';
+import LandingPage from './Pages/LandingPage'
 import './App.css';
 
 function App() {
   return (
-    <div className='App'>'
+    <div className='App'>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Step />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/register" element={<Step />} />
           <Route path="/calculator" element={<Calculator />} />
         </Routes>
       </BrowserRouter>
