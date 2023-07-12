@@ -34,7 +34,7 @@ export default function LandingPage() {
                     Learn How To make ₹500/hr using your skills
                 </div>
                 <div className="more-info">
-                    Say goodbye to boring financial jargon and hello to your man, Sharan's easy-to-understand and engaging approach to personal finance. Become a part of the elite top 1% who know the secrets of growing their wealth.
+                    Kickstart your Freelancing career with the masterclass. Gain all the knowledge collected over 5 years of freelancing in just 2 hours. Learn how to get your first client, how to price your services, how to get paid and much more.
                 </div>
                 <div className="main-cta-container">
                     <Button className="main-cta" onClick={() => navigate('/register')}>
