@@ -22,9 +22,7 @@ export default function LandingPage() {
         setExpandIconPosition(newExpandIconPosition);
     };
     const handlePayNow = () => {
-        submit({ button: "pay_now" }).then(() => {
-            window.open('https://wa.me/+919346009605?text=I%20Would%20like%20to%20join%20the%20masterclass')
-        })
+        submit({ button: "pay_now" })
     }
 
     const submit = async (data) => {
@@ -53,9 +51,11 @@ export default function LandingPage() {
                     Kickstart your Freelancing career with the masterclass. Gain all the knowledge collected over 5 years of freelancing in just 2 hours. Learn how to get your first client, how to price your services, how to get paid and much more.
                 </div>
                 <div className="main-cta-container">
-                    <Button className="main-cta" onClick={handlePayNow}>
-                        <span className="text">Start your freelance Journey</span>
-                    </Button>
+                    <a href="//api.whatsapp.com/send?phone=919346009605&text=Hi there I would Like To join the Masterclass">
+                        <Button className="main-cta" onClick={handlePayNow}>
+                            <span className="text">Start your freelance Journey</span>
+                        </Button>
+                    </a>
                 </div>
                 <div className="users">
                     <img src={Users} />
@@ -139,9 +139,11 @@ export default function LandingPage() {
                     Back Guarantee
                 </div>
                 <div className="cta">
-                    <Button className="footer-cta" onClick={handlePayNow}>
-                        <span className="text" >Register Now at ₹197/- Only</span>
-                    </Button>
+                    <a href="//api.whatsapp.com/send?phone=919346009605&text=Hi there I would Like To join the Masterclass">
+                        <Button className="footer-cta" onClick={handlePayNow}>
+                            <span className="text" >Register Now at ₹197/- Only</span>
+                        </Button>
+                    </a>
                 </div>
             </div>
         </div>
