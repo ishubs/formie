@@ -7,6 +7,8 @@ import Users from "../../assets/users.png"
 import Calculator from "../../components/Calculator/CalculatorComponent";
 import { useNavigate } from "react-router-dom";
 import { Collapse } from 'antd';
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../../firebase";
 const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
@@ -19,6 +21,20 @@ export default function LandingPage() {
     const onPositionChange = (newExpandIconPosition) => {
         setExpandIconPosition(newExpandIconPosition);
     };
+    const handlePayNow = () => {
+        submit({ button: "pay_now" }).then(() => {
+            window.open('https://wa.me/+919346009605?text=I%20Would%20like%20to%20join%20the%20masterclass')
+        })
+    }
+
+    const submit = async (data) => {
+        try {
+            const docRef = await addDoc(collection(db, "leads-3"), data);
+            console.log("Document written with ID: ", docRef.id);
+        } catch (e) {
+            console.error("Error adding document: ", e);
+        }
+    }
     const onChange = (key) => {
         console.log(key);
     };
@@ -37,7 +53,7 @@ export default function LandingPage() {
                     Kickstart your Freelancing career with the masterclass. Gain all the knowledge collected over 5 years of freelancing in just 2 hours. Learn how to get your first client, how to price your services, how to get paid and much more.
                 </div>
                 <div className="main-cta-container">
-                    <Button className="main-cta" onClick={() => navigate('/register')}>
+                    <Button className="main-cta" onClick={handlePayNow}>
                         <span className="text">Start your freelance Journey</span>
                     </Button>
                 </div>
@@ -123,7 +139,7 @@ export default function LandingPage() {
                     Back Guarantee
                 </div>
                 <div className="cta">
-                    <Button className="footer-cta" onClick={() => navigate('/register')}>
+                    <Button className="footer-cta" onClick={handlePayNow}>
                         <span className="text" >Register Now at ₹197/- Only</span>
                     </Button>
                 </div>
