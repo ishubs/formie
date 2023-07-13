@@ -63,13 +63,13 @@ export default function Step3({ setStep }) {
             {contextHolder}
             <div style={{ justifyContent: 'center', textAlign: 'center' }}>
                 <div>
-                    <div className='title' style={{ textAlign: 'center', marginBottom: '50px' }}> Don't Miss a chance to Learn How to make a minimum of Rs 700 / hour as a beginner</div>
+                    <div className='title' style={{ textAlign: 'center', marginBottom: '50px' }}> Don't Miss a chance to Learn How to make a minimum of Rs 500 / hour as a beginner</div>
                 </div>
                 <div>
-                    <div style={{ textAlign: 'center' }}>The Price of this course is Rs 449</div>
+                    <div style={{ textAlign: 'center' }}>The Price of this course is Rs 197</div>
                     <div className='title' style={{ textAlign: 'center', marginTop: '30px' }}>We have limited seats</div>
                     <div style={{ display: 'flex', justifyContent: 'space-around', alignContent: 'center', alignItems: 'center', marginTop: '30px', flexDirection: 'column', gap: '10px' }}>
-                        <Button type="primary" style={{ width: '100%' }} size="large" onClick={() => handlePayNow()}>Pay ₹449</Button>
+                        <Button type="primary" style={{ width: '100%' }} size="large" onClick={() => handlePayNow()}>Pay ₹197</Button>
                         <Button size='large' style={{ width: '100%' }} onClick={() => handleGiveMeACall()} >Give me a call back</Button>
                     </div>
                 </div>

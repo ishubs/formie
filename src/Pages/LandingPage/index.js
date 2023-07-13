@@ -124,7 +124,7 @@ export default function LandingPage() {
                 </div>
                 <div className="cta">
                     <Button className="footer-cta" onClick={() => navigate('/register')}>
-                        <span className="text" >Register Now at 449/- Only</span>
+                        <span className="text" >Register Now at ₹197/- Only</span>
                     </Button>
                 </div>
             </div>
