@@ -24,9 +24,9 @@ export default function Step() {
                 return <Step2 setStep={setStep} />;
             case 3:
                 return <Step3 setStep={setStep} />;
+            // case 4:
+            //     return <Step4 setStep={setStep} />;
             case 4:
-                return <Step4 setStep={setStep} />;
-            case 5:
                 return <EndScreen />;
             case 'cancel':
                 return <CancelScreen />

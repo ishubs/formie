@@ -8,13 +8,13 @@ import VerifiedIcon from '../../assets/verified_icon.png'
 export default function EndScreen() {
     const { formData } = useContext(FormDataContext)
     useEffect(() => {
-        // submit()
+        submit()
     }, [])
 
     const submit = async () => {
         console.log(formData)
         try {
-            const docRef = await addDoc(collection(db, "leads-1"), formData);
+            const docRef = await addDoc(collection(db, "Free-1"), formData);
             console.log("Document written with ID: ", docRef.id);
         } catch (e) {
             console.error("Error adding document: ", e);
@@ -24,8 +24,8 @@ export default function EndScreen() {
     return (
         <div>
             <img style={{ marginBottom: "40px" }} src={VerifiedIcon} />
-            <div className="title">Thanks For Registering</div>
-            <div className="end-desc">You will receive a call from us shortly</div>
+            <div className="title">You have Registered Successfully</div>
+            <div className="end-desc">Join the Whatsapp group for more details</div>
             {/* 
             <p className="end-desc">
                 Link: Will be sent on WhatsApp
@@ -42,9 +42,10 @@ export default function EndScreen() {
             </p> */}
             <br>
             </br>
-            <div style={{ margin: '20px 0px' }}>OR</div>
+            {/* <div style={{ margin: '20px 0px' }}>OR</div> */}
 
-            <a style={{ textDecoration: 'none' }} href="tel:+919346009605"><Button icon={<PhoneOutlined />} type="primary" style={{ width: '100%' }} size="large">Call Now to Register Faster</Button> </a>
+            <a style={{ textDecoration: 'none' }} href="https://chat.whatsapp.com/LZkAR5XXbgzCm9Wmev6zwA"><Button type="primary" style={{ width: '100%' }} size="large">Join Whatsapp Group</Button> </a>
+            {/* <a style={{ textDecoration: 'none' }} href="tel:+919346009605"><Button icon={<PhoneOutlined />} type="primary" style={{ width: '100%' }} size="large">Call Now to Register Faster</Button> </a> */}
 
         </div>
     )

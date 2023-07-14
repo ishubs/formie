@@ -51,11 +51,11 @@ export default function LandingPage() {
                     Kickstart your Freelancing career with the masterclass. Gain all the knowledge collected over 5 years of freelancing in just 2 hours. Learn how to get your first client, how to price your services, how to get paid and much more.
                 </div>
                 <div className="main-cta-container">
-                    <a href="//api.whatsapp.com/send?phone=919346009605&text=Hi there I would Like To join the Masterclass">
-                        <Button className="main-cta" onClick={handlePayNow}>
-                            <span className="text">Start your freelance Journey</span>
-                        </Button>
-                    </a>
+                    {/* <a href="//api.whatsapp.com/send?phone=919346009605&text=Hi there I would Like To join the Masterclass"> */}
+                    <Button className="main-cta" onClick={() => navigate('/register')}>
+                        <span className="text">Start your freelance Journey</span>
+                    </Button>
+                    {/* </a> */}
                 </div>
                 <div className="users">
                     <img src={Users} />
@@ -134,16 +134,16 @@ export default function LandingPage() {
 
 
             <div className="footer">
-                <div className="gurantee">
+                {/* <div className="gurantee">
                     100% Money
                     Back Guarantee
-                </div>
+                </div> */}
                 <div className="cta">
-                    <a href="//api.whatsapp.com/send?phone=919346009605&text=Hi there I would Like To join the Masterclass">
-                        <Button className="footer-cta" onClick={handlePayNow}>
-                            <span className="text" >Register Now at ₹197/- Only</span>
-                        </Button>
-                    </a>
+                    {/* <a href="//api.whatsapp.com/send?phone=919346009605&text=Hi there I would Like To join the Masterclass"> */}
+                    <Button className="footer-cta" onClick={() => navigate('/register')}>
+                        <span className="text" >Register Now for Free</span>
+                    </Button>
+                    {/* </a> */}
                 </div>
             </div>
         </div>
